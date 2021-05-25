@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongodb = require('mongodb');
 const fetch = require("node-fetch");
