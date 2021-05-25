@@ -10,6 +10,9 @@ const port = process.env.PORT || 3001;
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017';
 
 app.use(express.json());
+app.get("/",async (req,res)=>{
+    res.send("USE This INFORMATION IN LINK: /weekly, /monthly, /yearly");
+})
 
 app.get("/weekly",async (req,res)=>{
     try {
